@@ -2,29 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guardino Lite</title>
-
-  <!-- Style -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <main class="container">
-    <h1>Guardino</h1>
-    <p class="subtitle">A simple thinking companion</p>
+  <h1>Guardino</h1>
+  <p>A simple thinking companion</p>
 
-    <textarea
-      id="input"
-      placeholder="Hello, is there any truth to this?"
-    ></textarea>
+  <textarea
+    id="input"
+    placeholder="Write what is on your mind..."
+  ></textarea>
 
-    <button id="reflectBtn">Reflect</button>
+  <button id="reflectBtn">Reflect</button>
 
-    <p id="response" class="response"></p>
-  </main>
+  <div id="response"></div>
 
-  <!-- ✅ JS MUST BE LAST -->
   <script src="guardino.js"></script>
 </body>
 </html>
