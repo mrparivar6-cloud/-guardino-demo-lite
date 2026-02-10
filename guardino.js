@@ -1,15 +1,17 @@
-const btn = document.getElementById("reflectBtn");
-const input = document.getElementById("input");
-const response = document.getElementById("response");
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("input");
+  const button = document.getElementById("reflectBtn");
+  const response = document.getElementById("response");
 
-btn.addEventListener("click", () => {
-  const text = input.value.trim();
+  button.addEventListener("click", () => {
+    const text = input.value.trim();
 
-  if (!text) {
-    response.textContent = "Say a little more. I'm listening.";
-    return;
-  }
+    if (!text) {
+      response.textContent = "Please write something first.";
+      return;
+    }
 
-  response.textContent =
-    "Let's slow down. What part of this feels most uncertain right now?";
+    response.textContent =
+      "Thank you for sharing. Take a moment to reflect on your thoughts.";
+  });
 });
